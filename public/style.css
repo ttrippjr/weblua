@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+code, pre, textarea, #output {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 16px;
+}
+
+.col{
+    flex:1;
+}
+
+.col2{
+    flex:2;
+}
+
+.col3{
+    flex:3;
+}
+
+.row{
+    display: flex;
+    gap: 8px; 
+}
+
+#canvas {
+    border: 1px solid black;
+    width: 100%;
+}
+
+#output {
+    height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+
+    display: flex;
+    gap: 0;
+    flex-direction: column-reverse;
+}
+
+#input {
+    resize:none;
+    width: 100%;
+    box-sizing: border-box;
+}

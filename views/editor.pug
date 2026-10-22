@@ -1,0 +1,25 @@
+extends layout 
+
+block append head 
+    script(src="/wasmoon/index.js")
+
+block content
+    h1 Editor
+    p create a world!
+
+    .row
+        .col3
+            .row: .col 
+                textarea#input(name="filename", width="100%")
+                br
+                button#submit Run Code
+
+        .col2
+            .row: canvas#canvas
+            .row: div#output
+
+
+
+
+
+    script(src="/editor.js")

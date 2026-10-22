@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet", href="/style.css")
+        block head
+
+    body
+        .header
+            nav.navigation 
+                ul 
+                    li: a(href="/") home
+                    li: a(href="/editor") editor
+
+        .content
+            block content 
+
+        .footer
+            small: em timothy tripp 2026
